@@ -1,4 +1,4 @@
-let score = "hitesh"
+let score = 33 //"Akshay"
 
 //console.log(typeof score);
 //console.log(typeof(score));
@@ -9,17 +9,19 @@ let valueInNumber = Number(score)
 
 
 // "33" => 33
-// "33abc" => NaN
+// "33abc" => NaN  // typeof NaN is a number
 //  true => 1; false => 0
+// let valueInNumber = Number(score)  -- score => null --- will give 0 as a value.
 
-let isLoggedIn = "hitesh"
+
+let isLoggedIn = "Akshay"
 
 let booleanIsLoggedIn = Boolean(isLoggedIn)
-//  console.log(booleanIsLoggedIn);
+//console.log(booleanIsLoggedIn);
 
-// 1 => true; 0 => false
+// 1 => true; 0 => false (Anyother Number it also returns true)
 // "" => false
-// "hitesh" => true
+// "Akshay" => true
 
 let someNumber = 33
 
@@ -41,7 +43,7 @@ let negValue = -value
 // console.log(2%3);
 
 let str1 = "hello"
-let str2 = " hitesh"
+let str2 = " Akshay"
 
 let str3 = str1 + str2
 // console.log(str3);
@@ -51,7 +53,7 @@ let str3 = str1 + str2
 // console.log("1" + 2 + 2);
 // console.log(1 + 2 + "2");
 
-// console.log( (3 + 4) * 5 % 3);
+//console.log( (3 + 4) * 5 % 3);
 
 // console.log(+true);
 // console.log(+"");
@@ -62,7 +64,7 @@ num1 = num2 = num3 = 2 + 2
 
 let gameCounter = 100
 ++gameCounter;
-console.log(gameCounter);
+//console.log(gameCounter);
 
 // link to study
 // https://tc39.es/ecma262/multipage/abstract-operations.html#sec-type-conversion
