@@ -48,13 +48,13 @@ if (true) {
 
 console.log(addone(5))
 
-function addone(num){
+function addone(num){  // functions 
     return num + 1
 }
 
 
 
 addTwo(5)
-const addTwo = function(num){
+const addTwo = function(num){  // function expression 
     return num + 2
 }
