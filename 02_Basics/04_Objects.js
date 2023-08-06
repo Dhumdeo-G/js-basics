@@ -63,13 +63,15 @@ const course = {
     courseInstructor: "akshay"
 }
 
-// course.courseInstructor
+// course.courseInstructor  // this is destructuring of an object.
 
-const {courseInstructor: instructor} = course
+const {courseInstructor: instructor} = course  //this is destructuring of an object.  // instread of courseInstructor we are goin to use instructor now onwards.
 
-// console.log(courseInstructor);
-console.log(instructor);
+// console.log(courseInstructor);  //this is destructuring of an object.
+console.log(instructor);  // this is destructuring of an object.
 
+
+//JSON    //
 // {
 //     "name": "akshay",
 //     "coursename": "js in hindi",
