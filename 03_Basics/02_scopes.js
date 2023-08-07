@@ -46,7 +46,7 @@ if (true) {
 // ++++++++++++++++++ interesting ++++++++++++++++++
 
 
-console.log(addone(5))
+console.log(addone(5))  // there is no error here
 
 function addone(num){  // functions 
     return num + 1
@@ -54,7 +54,7 @@ function addone(num){  // functions
 
 
 
-addTwo(5)
+addTwo(5)   // it will throw an error, as you are holding that function inside another variable
 const addTwo = function(num){  // function expression 
     return num + 2
 }
