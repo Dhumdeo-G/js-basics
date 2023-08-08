@@ -8,14 +8,15 @@
 
 // console.log(values);
 
+// we just don't want to iterate , also want to return something based on certain condition
 const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-
+// filter needs to have condition, based on that it return something
 // const newNums = myNums.filter( (num) => {
 //     return num > 4
 // } )
 
 // const newNums = []
-
+// IMP comparision --------->
 // myNums.forEach( (num) => {
 //     if (num > 4) {
 //         newNums.push(num)
@@ -24,7 +25,7 @@ const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 // console.log(newNums);
 
-
+// values from database
 const books = [
     { title: 'Book One', genre: 'Fiction', publish: 1981, edition: 2004 },
     { title: 'Book Two', genre: 'Non-Fiction', publish: 1992, edition: 2008 },
@@ -38,7 +39,7 @@ const books = [
   ];
 
   let userBooks = books.filter( (bk) => bk.genre === 'History')
-
+// {} --- must to use return keyword
   userBooks = books.filter( (bk) => { 
     return bk.publish >= 1995 && bk.genre === "History"
 })
