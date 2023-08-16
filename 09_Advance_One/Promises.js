@@ -1,17 +1,19 @@
+// creation of Promises
+// Promises takes callback as a Parameter
 const promiseOne = new Promise(function(resolve, reject){
     //Do an async task
     // DB calls, cryptography, network
     setTimeout(function(){
         console.log('Async task is compelete');
-        resolve()
+        resolve()    // to tell Promise is resolved
     }, 1000)
 })
-
-promiseOne.then(function(){
+// consumption of Promise
+promiseOne.then(function(){  // .then has a connection with Resolve, you are getting callback function with .then, it automatically receives an argument
     console.log("Promise consumed");
 })
 
-new Promise(function(resolve, reject){
+new Promise(function(resolve, reject){  // here promise is not hold in variable
     setTimeout(function(){
         console.log("Async task 2");
         resolve()
@@ -23,7 +25,7 @@ new Promise(function(resolve, reject){
 
 const promiseThree = new Promise(function(resolve, reject){
     setTimeout(function(){
-        resolve({username: "Chai", email: "chai@example.com"})
+        resolve({username: "Chai", email: "chai@example.com"})  //you can pass parameters to resolve , for ex. an object.
     }, 1000)
 })
 
@@ -35,7 +37,7 @@ const promiseFour = new Promise(function(resolve, reject){
     setTimeout(function(){
         let error = true
         if (!error) {
-            resolve({username: "hitesh", password: "123"})
+            resolve({username: "akshay", password: "123"})
         } else {
             reject('ERROR: Something went wrong')
         }
