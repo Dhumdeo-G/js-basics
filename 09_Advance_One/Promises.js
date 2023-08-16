@@ -68,10 +68,10 @@ const promiseFive = new Promise(function(resolve, reject){
 });
 
 async function consumePromiseFive(){
-    try {
-        const response = await promiseFive
+    try { 
+        const response = await promiseFive  // waiting for Promise to get completed
         console.log(response);
-    } catch (error) {
+    } catch (error) {   // this block is required to handled catch situation at the time of making database connection and getting an Error.
         console.log(error);
     }
 }
@@ -82,7 +82,7 @@ consumePromiseFive()
 //     try {
 //         const response = await fetch('https://jsonplaceholder.typicode.com/users')
 
-//         const data = await response.json()
+//         const data = await response.json()  // response ko bhi JSON me convert hone ke liye time lagega, so aapko yaha par wait karana padega.
 //         console.log(data);
 //     } catch (error) {
 //         console.log("E: ", error);
@@ -90,6 +90,7 @@ consumePromiseFive()
 // }
 
 //getAllUsers()
+
 
 fetch('https://api.github.com/users/hiteshchoudhary')
 .then((response) => {
